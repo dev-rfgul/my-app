@@ -1,8 +1,8 @@
 import axios from 'axios'
 import React from 'react'
 import { useState } from 'react'
-// import { Link } from "react-router-dom";
 import { Link } from 'react-router-dom';
+import './App.css';
 
 
 const App = () => {
@@ -21,7 +21,7 @@ const App = () => {
       <div className='data'>
 
         {<ul> {users.map((e) => {
-          return <li>{e.name} ---<Link></Link> </li>
+          return <li>{e.name} ---<a>Explore</a></li>
         })}</ul>}
       </div>
 
